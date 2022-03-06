@@ -56,6 +56,11 @@ terraform state show <resource>.<resource_name>
 ```
 terraform console
 ```
+* Conditions to apply
+```
+interpreter= var.os_host== "windows" ? ["Powershell", "-Command"] : ["Bash", "-c"]
+```
+_Here interpreter is taken as example you can use conditions anywhere with in tf files first one is for true and second is for false_
 **Note:** _Terraform console only use the config which are present in .tf files_
 ### Variable Precedence in Terraform
 ![image](https://user-images.githubusercontent.com/63061732/156918410-35a56fb5-bab9-42d5-9fe4-a5e72503d960.png)
