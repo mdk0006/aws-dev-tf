@@ -40,3 +40,6 @@ terraform apply --auto-approve
 ```
 terraform state show <resource>.<resource_name>
 ```
+### Variable Precedence in Terraform
+![image](https://user-images.githubusercontent.com/63061732/156918410-35a56fb5-bab9-42d5-9fe4-a5e72503d960.png)
+
